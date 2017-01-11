@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
-  devtool: 'eval',
+  devtool: 'eval-source-map',
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
@@ -28,9 +28,6 @@ module.exports = {
     },{
        test: /\.css$/,
        loader:'style!css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
-    },{
-      test:require.resolve('jquery'),
-      loader:'expose?jQuery!expose?$'
     }]
   }
 };

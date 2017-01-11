@@ -5,14 +5,14 @@
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src",
-    "build":"babel src/react-imageviewer.js --out-file lib/react-imageviewer.js",
-    "test":"npm run lint"
+    "build": "babel src/react-imageviewer.js --out-file lib/react-imageviewer.js",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
     "url": ""
   },
-  "main":"lib/react-imageviewer.js",
+  "main": "lib/react-imageviewer.js",
   "keywords": [
     "react",
     "reactjs",
@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "react": "^15.4.1",
-    "react-dom": "^15.4.1"
+    "react-dom": "^15.4.1",
+    "viewerjs": "^0.5.1"
   }
 }
