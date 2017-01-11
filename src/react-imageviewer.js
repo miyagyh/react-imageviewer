@@ -1,10 +1,5 @@
 import React,{Component} from 'react';
 import Viewer from 'viewerjs';
-const style={
-    width:'500px',
-    height:'500px',
-    border:'1px solid red'
-}
 export default class ReactImageViewer extends Component{
     constructor(props){
         super(props);
@@ -32,7 +27,7 @@ export default class ReactImageViewer extends Component{
     }
     render(){
         return (
-            <div className="react-imageviewer-container" ref="viewer" style={style}>
+            <div className="react-imageviewer-container" ref="viewer">
                 {
                     this.props.items.map((item)=>{
                         return (
