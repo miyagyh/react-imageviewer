@@ -27,7 +27,7 @@ module.exports = {
       include: path.join(__dirname, 'src')
     },{
        test: /\.css$/,
-       loader:'style!css?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+       loader:'style!css'
     }]
   }
 };
