@@ -25,16 +25,18 @@ export default class ReactImageViewer extends Component{
     renderViewerDom(){
         return this.refs.viewer;
     }
+    renderImageViewerContent(){
+      let props=this.props;
+      if(props.type==='data' && props.items){
+        return props.items.map(item=><img src={item.url} key={item.url}/>);
+      }else if(props.type==='dom' && props.children){
+        return props.children;
+      }
+    }
     render(){
         return (
             <div className="react-imageviewer-container" ref="viewer">
-                {
-                    this.props.items.map((item)=>{
-                        return (
-                            <img src={item.url} key={item.url}/>
-                        )
-                    })
-                }
+                {this.renderImageViewerContent()}
             </div>
         )
     }
