@@ -16,7 +16,11 @@ export default class App extends Component{
     return (
       <div>
 	  	    <ReactImageViewer type="dom">
-            <image class="xxx" src="https://fengyuanchen.github.io/viewer/img/tibet-4.jpg"/>
+            <image class="xxx YYY" src="https://fengyuanchen.github.io/viewer/img/tibet-4.jpg"/>
+            <image class="xxx" src="https://fengyuanchen.github.io/viewer/img/tibet-2.jpg"/>
+            <image class="xxx" src="https://fengyuanchen.github.io/viewer/img/tibet-2.jpg"/>
+            <image class="xxx" src="https://fengyuanchen.github.io/viewer/img/tibet-1.jpg"/>
+            <image class="xxx" src="https://fengyuanchen.github.io/viewer/img/tibet-8.jpg"/>
           </ReactImageViewer>
       </div>
     )
