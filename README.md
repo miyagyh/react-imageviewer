@@ -2,6 +2,7 @@
 
 >A simple image viewer for reactjs
 >>
+
 # install
 ```
 npm install react-imageviewer
