@@ -1,6 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
   devtool: 'eval-source-map',
   entry: [
@@ -17,7 +16,6 @@ module.exports = {
     extensions:['','.js','.css','.json']
   },
   plugins: [
-    new ExtractTextPlugin('style.css', { allChunks: true }),
     new webpack.HotModuleReplacementPlugin()
   ],
   module: {
@@ -25,9 +23,6 @@ module.exports = {
       test: /\.js$/,
       loaders: ['react-hot', 'babel'],
       include: path.join(__dirname, 'src')
-    },{
-       test: /\.css$/,
-       loader:'style!css'
     }]
   }
 };

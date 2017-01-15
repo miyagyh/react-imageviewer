@@ -1,16 +1,11 @@
 import React,{Component} from 'react';
 import Viewer from 'viewerjs';
-class ImageList extends Component{
-  constructor(props){
-    super(props);
-  }
-  render(){
-    return (
-      <div>
-        {this.props.items.map(item=><img key={item.id} src={item.src} className={item.className}/>)}
-      </div>
-    )
-  }
+const ImageList=(props)=>{
+  return (
+    <div>
+      {props.items.map(item=><img key={item.id} src={item.src} className={item.className}/>)}
+    </div>
+  )
 }
 export default class ReactImageViewer extends Component{
     constructor(props){
